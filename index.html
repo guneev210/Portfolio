@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(1, 1, 43);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(86, 29, 115);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: aqua;
+        }
+        .left{
+            font-size: 1.2rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0;
+        }
+        .firstsection > div{
+            width: 40%;
+        }
+        .leftsection{
+            font-size: 2rem;
+        }
+        .rightsection img{
+            width: 80%;
+        }
+        .purple{
+            color: rgb(222, 133, 222);
+        }
+        .text-gray{
+            color: gray;
+        }
+        .leftsection .ele{
+            color: rgb(64, 185, 82);
+            margin: 80px 0;
+        }
+        .aboutsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 100vh;
+        }
+        .aboutsection .edu h3{
+            color:  rgb(255, 81, 171);
+            margin: 18px 0;
+        }
+        .aboutsection .Hob h3{
+            color:  rgb(255, 81, 171);
+            margin: 18px 0;
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 100vh;
+        }
+        main hr{
+            border: 0;
+            background-color: rgb(168, 168, 248);
+            height: 1.2px;
+            margin: 40px 88px;
+        }
+        .secondsection .box{
+            width: 80vw;
+        }
+        .secondsection .box dl{
+            margin: 30px;
+        }
+        .secondsection .box dl dt a{
+            color: rgb(255, 81, 171);
+        }
+        .secondsection .box dl dt a:hover{
+            color: rgb(255, 81, 171);
+            font-size: 1.1rem;
+        }
+        .secondsection .box dl dd{
+            margin: 10px;
+        }
+        .cont{
+            max-width: 80vw;
+            margin: auto;
+            height: 20vh;
+        }
+        .cont ul{
+            display: flex;
+            justify-content: center;
+        }
+        .cont li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        .cont li a{
+            color: white;
+        }
+        .cont li a:hover{
+            color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- style="background-color: black;"
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+    </div> -->
+
+    <header>
+        <nav>
+            <div class="left">Guneev's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#hom">Home</a></li>
+                    <li><a href="#Ab">About</a></li>
+                    <li><a href="#proj">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection" id="hom">
+            <div class="leftsection">
+                Hey there! 
+                <br>
+                I am <span class="purple">Guneev Kaur.</span>
+                <div class="ele"> 
+                    <span id="element"></span> 
+                </div>
+            </div> 
+            <div class="rightsection">
+                <img src="pg.png" alt="">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="aboutsection" id="Ab">
+            <h1>About me</h1>
+            <div class="edu"> 
+                <h3>Education</h3>
+                <ul>
+                    <li>Undergraduation</li>
+                    <div>Thapar Institute of Engineering and Technology, Patiala</div>
+                    <div>Bachelor of Computer Engineering (2020-2024)</div>
+
+                    <li>High School</li>
+                    <div>Jodhamal Public School, Jammu</div>
+                    <div>PCM+Computer Science | CBSE</div>
+                </ul>
+            </div>
+            <div class="Hob">
+                <h3>Hobbies</h3>
+                <p>I enjoy practicing my various hobbies in my spare time, such as cycling or working out at home. I also occasionally practice yoga. Physical activity enables me to recharge so that I can continue working and thinking positively. I also like to draw something because I enjoy painting and sketching, and it seems to help me unwind. Dancing is my hobby that i follow passionately.</p>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="secondsection" id="proj">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Projects</h1>
+            <div class="box">
+                <dl>
+                    <dt><h3><a href="https://github.com/guneev210/Teach-Screen">Teach Screen</a></h3></dt>
+                    <dd> A simple AI project which detects our index finger to choose tools and palm movement to
+                        draw different shapes, write and erase. Made using OpenCV, Numpy and Mediapipe library.</dd>
+                    <dt><h3><a href="https://github.com/guneev210/Railway-Management-System">Railway Management System</a></h3></dt>
+                    <dd>A project to book train tickets, display train information, passenger details, etc.
+                        Database made using MySQL and for backend Django is used.</dd>
+                    <dt><h3><a href="https://github.com/guneev210/Color-recognition-using-opencv">Color Recognition System</a></h3></dt>
+                    <dd>Machine learning model for Color recognition using Open CV.</dd>
+                    <dt><h3><a href="https://github.com/guneev210/Medi-Robo">Medi Robo</a></h3></dt>
+                    <dd>Machine Learning project that predicts diseases and tells the risk score and precautions. It also predicts the risk
+                        of hospitalization and re-hospitalization by taking patients’ Electronic health records as inputs.
+                        </dd>
+                    <dt><h3><a href="https://github.com/guneev210/Extracting-Fashion-Trends-from-Social-media-data-and-finding-similar-items-on-Flipkart">Extracting Trends from social media</a></h3></dt>
+                    <dd>A project for Flipkart Grid 4.0 using machine learning concepts which extract latest fashion trends using hashtag
+                        from Instagram (Instagram Scraping) and find similar items on Flipkart.</dd>
+                </dl>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="cont" id="contact">
+            <ul>
+                <li><a href="https://github.com/guneev210">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/guneev-jawandha-7142911b7/">LinkedIn</a></li>
+                <li><a href="mailto: guneevjawandha@gmail.com">E-mail</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Development/', 'Python/', 'C++/C/', 'Graphic Designing/', 'Machine Learning/', 'Cloud Computing/'],
+          typeSpeed: 20,
+        });
+      </script>
+
+</body>
+</html>
